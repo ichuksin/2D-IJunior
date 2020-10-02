@@ -1057,7 +1057,7 @@ TextureImporter:
         width: 32
         height: 48
       alignment: 9
-      pivot: {x: -0.009841919, y: -0.0032205582}
+      pivot: {x: -0.08, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1183,7 +1183,7 @@ TextureImporter:
         width: 29
         height: 48
       alignment: 9
-      pivot: {x: 0.0104785785, y: 0.005607923}
+      pivot: {x: -0.08, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,12 +1304,12 @@ TextureImporter:
       name: lpc-doors-animated-4_2
       rect:
         serializedVersion: 2
-        x: 222
+        x: 221
         y: 80
         width: 18
         height: 48
       alignment: 9
-      pivot: {x: 0.007677714, y: 0.007677714}
+      pivot: {x: -0.08, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1435,7 +1435,7 @@ TextureImporter:
         width: 8
         height: 48
       alignment: 9
-      pivot: {x: -0.039661407, y: 0.007677277}
+      pivot: {x: 0.01, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

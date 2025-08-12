@@ -1242,7 +1242,7 @@ TextureImporter:
       213: -1225139450929392576
     second: hyptosis_tile-art-batch-4_412
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1259,9 +1259,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1270,9 +1273,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1293,9 +1296,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1307,6 +1316,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -1319,6 +1329,59 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -10007,9 +10070,422 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      hyptosis_tile-art-batch-4_0: 8425125568739485943
+      hyptosis_tile-art-batch-4_1: -4198406677645274860
+      hyptosis_tile-art-batch-4_10: 8363971822705604808
+      hyptosis_tile-art-batch-4_100: 3842411917156289780
+      hyptosis_tile-art-batch-4_101: 8314786848819590012
+      hyptosis_tile-art-batch-4_102: -4487231966739885358
+      hyptosis_tile-art-batch-4_103: -59186215261183146
+      hyptosis_tile-art-batch-4_104: 6641441138087669856
+      hyptosis_tile-art-batch-4_105: -122128298130653215
+      hyptosis_tile-art-batch-4_106: 704345067576489672
+      hyptosis_tile-art-batch-4_107: -7792265723794654094
+      hyptosis_tile-art-batch-4_108: -1364666637531995860
+      hyptosis_tile-art-batch-4_109: -3895603234267641805
+      hyptosis_tile-art-batch-4_11: 8083547595685701372
+      hyptosis_tile-art-batch-4_110: -1588188558784875628
+      hyptosis_tile-art-batch-4_111: 6896036567526220030
+      hyptosis_tile-art-batch-4_112: 589507221991396554
+      hyptosis_tile-art-batch-4_113: -473543455500042246
+      hyptosis_tile-art-batch-4_114: 5534452905356490843
+      hyptosis_tile-art-batch-4_115: 5988690257576080921
+      hyptosis_tile-art-batch-4_116: 5963719272358072491
+      hyptosis_tile-art-batch-4_117: -640840591018636897
+      hyptosis_tile-art-batch-4_118: -6625404863924711992
+      hyptosis_tile-art-batch-4_119: -5116282835602221993
+      hyptosis_tile-art-batch-4_12: -7015501460711852098
+      hyptosis_tile-art-batch-4_120: -7244950988050140621
+      hyptosis_tile-art-batch-4_121: -2018770483636680180
+      hyptosis_tile-art-batch-4_122: -4023992523622486561
+      hyptosis_tile-art-batch-4_123: -3258384845777084016
+      hyptosis_tile-art-batch-4_124: -5217644375554415575
+      hyptosis_tile-art-batch-4_125: -1596367338425923505
+      hyptosis_tile-art-batch-4_126: 970052244610621484
+      hyptosis_tile-art-batch-4_127: 3707723785121833727
+      hyptosis_tile-art-batch-4_128: 5657360149905699054
+      hyptosis_tile-art-batch-4_129: 7840186057618270112
+      hyptosis_tile-art-batch-4_13: -6048227366338343534
+      hyptosis_tile-art-batch-4_130: 5799213817558518693
+      hyptosis_tile-art-batch-4_131: 4809546634595698066
+      hyptosis_tile-art-batch-4_132: 6018982897830249830
+      hyptosis_tile-art-batch-4_133: -9172808572728366553
+      hyptosis_tile-art-batch-4_134: -54389321209932908
+      hyptosis_tile-art-batch-4_135: 425191391273340
+      hyptosis_tile-art-batch-4_136: 5631013317273365431
+      hyptosis_tile-art-batch-4_137: -8354382226011273583
+      hyptosis_tile-art-batch-4_138: -4575710574199135736
+      hyptosis_tile-art-batch-4_139: 1534909003428860693
+      hyptosis_tile-art-batch-4_14: -3378580518023270434
+      hyptosis_tile-art-batch-4_140: -7922466356536775182
+      hyptosis_tile-art-batch-4_141: -5966485696846442075
+      hyptosis_tile-art-batch-4_142: 2915614669514828294
+      hyptosis_tile-art-batch-4_143: -7150238151138186505
+      hyptosis_tile-art-batch-4_144: -942811530387200239
+      hyptosis_tile-art-batch-4_145: -5344387633821617643
+      hyptosis_tile-art-batch-4_146: -3141587779327410266
+      hyptosis_tile-art-batch-4_147: -2025671438416879172
+      hyptosis_tile-art-batch-4_148: 1629395210871912
+      hyptosis_tile-art-batch-4_149: -936450442094808362
+      hyptosis_tile-art-batch-4_15: 5223861575466402594
+      hyptosis_tile-art-batch-4_150: -8863690948494343664
+      hyptosis_tile-art-batch-4_151: 1245890604786955357
+      hyptosis_tile-art-batch-4_152: 4599874963778863925
+      hyptosis_tile-art-batch-4_153: 7673361676094405818
+      hyptosis_tile-art-batch-4_154: 9056220474425418091
+      hyptosis_tile-art-batch-4_155: 597512630251471702
+      hyptosis_tile-art-batch-4_156: -4378150909743088585
+      hyptosis_tile-art-batch-4_157: 7168711782258331493
+      hyptosis_tile-art-batch-4_158: 1357342728187719583
+      hyptosis_tile-art-batch-4_159: 7329232583554295402
+      hyptosis_tile-art-batch-4_16: -8982250761877256819
+      hyptosis_tile-art-batch-4_160: 5694900724044116551
+      hyptosis_tile-art-batch-4_161: -7841252637117486700
+      hyptosis_tile-art-batch-4_162: 5843037762689402215
+      hyptosis_tile-art-batch-4_163: -6685705811339613572
+      hyptosis_tile-art-batch-4_164: -4171114037845294651
+      hyptosis_tile-art-batch-4_165: -6267693992910260884
+      hyptosis_tile-art-batch-4_166: -3051529418311546029
+      hyptosis_tile-art-batch-4_167: -1839093424449829361
+      hyptosis_tile-art-batch-4_168: -2813879253593934649
+      hyptosis_tile-art-batch-4_169: -9097457245509573054
+      hyptosis_tile-art-batch-4_17: 3750508107566151028
+      hyptosis_tile-art-batch-4_170: -8689279907850149315
+      hyptosis_tile-art-batch-4_171: 8469636369409098472
+      hyptosis_tile-art-batch-4_172: -2725728968253761336
+      hyptosis_tile-art-batch-4_173: -3035532692968216336
+      hyptosis_tile-art-batch-4_174: -267358501103848487
+      hyptosis_tile-art-batch-4_175: 4664804874995796326
+      hyptosis_tile-art-batch-4_176: -7309189406253606290
+      hyptosis_tile-art-batch-4_177: -4249308113156228502
+      hyptosis_tile-art-batch-4_178: -3928376666753360092
+      hyptosis_tile-art-batch-4_179: 3823881865217961803
+      hyptosis_tile-art-batch-4_18: 4525772820768486819
+      hyptosis_tile-art-batch-4_180: -8589577929051297895
+      hyptosis_tile-art-batch-4_181: 3435171202587080280
+      hyptosis_tile-art-batch-4_182: 8543387393384271563
+      hyptosis_tile-art-batch-4_183: 3602685895695686108
+      hyptosis_tile-art-batch-4_184: -4877492743395509844
+      hyptosis_tile-art-batch-4_185: 7476896869293410997
+      hyptosis_tile-art-batch-4_186: 8694356157600339265
+      hyptosis_tile-art-batch-4_187: -4080719309815572109
+      hyptosis_tile-art-batch-4_188: 2472587723858084275
+      hyptosis_tile-art-batch-4_189: 7327794543221051080
+      hyptosis_tile-art-batch-4_19: 8474594255785995861
+      hyptosis_tile-art-batch-4_190: 5363482443849552201
+      hyptosis_tile-art-batch-4_191: 4332729274011647580
+      hyptosis_tile-art-batch-4_192: -4665051728393003684
+      hyptosis_tile-art-batch-4_193: -5450840922953876399
+      hyptosis_tile-art-batch-4_194: 1991896603709790779
+      hyptosis_tile-art-batch-4_195: -2082147664629080706
+      hyptosis_tile-art-batch-4_196: 3693675818931401145
+      hyptosis_tile-art-batch-4_197: -783876825084392162
+      hyptosis_tile-art-batch-4_198: -1388520653871036634
+      hyptosis_tile-art-batch-4_199: 1339036003693218029
+      hyptosis_tile-art-batch-4_2: -75162435053812779
+      hyptosis_tile-art-batch-4_20: -2488202360544805742
+      hyptosis_tile-art-batch-4_200: -2885132392779637535
+      hyptosis_tile-art-batch-4_201: 7491181758227567579
+      hyptosis_tile-art-batch-4_202: -1997886034452230468
+      hyptosis_tile-art-batch-4_203: 9092396435659089532
+      hyptosis_tile-art-batch-4_204: 5544081886939530937
+      hyptosis_tile-art-batch-4_205: 4940095199302964596
+      hyptosis_tile-art-batch-4_206: -4856618858920589834
+      hyptosis_tile-art-batch-4_207: -8012348316821479829
+      hyptosis_tile-art-batch-4_208: 4675709203182809204
+      hyptosis_tile-art-batch-4_209: 6147461323744976148
+      hyptosis_tile-art-batch-4_21: -5412590595253526574
+      hyptosis_tile-art-batch-4_210: 7317196789796828050
+      hyptosis_tile-art-batch-4_211: 7392072540826815678
+      hyptosis_tile-art-batch-4_212: -6465453973190713551
+      hyptosis_tile-art-batch-4_213: -6447089991305399527
+      hyptosis_tile-art-batch-4_214: -307722345520721774
+      hyptosis_tile-art-batch-4_215: -1078485385156854601
+      hyptosis_tile-art-batch-4_216: 3983988610174411150
+      hyptosis_tile-art-batch-4_217: -8564255160596358579
+      hyptosis_tile-art-batch-4_218: 7789283948566976019
+      hyptosis_tile-art-batch-4_219: 5974614361224196540
+      hyptosis_tile-art-batch-4_22: -1157054462293750278
+      hyptosis_tile-art-batch-4_220: -7871491636165102632
+      hyptosis_tile-art-batch-4_221: 4208645689402001334
+      hyptosis_tile-art-batch-4_222: 7543819850891812954
+      hyptosis_tile-art-batch-4_223: -1240579959323375112
+      hyptosis_tile-art-batch-4_224: -4786898201618194775
+      hyptosis_tile-art-batch-4_225: -571152113418811054
+      hyptosis_tile-art-batch-4_226: 176212760417758968
+      hyptosis_tile-art-batch-4_227: -5030764502201993039
+      hyptosis_tile-art-batch-4_228: 41342295518230510
+      hyptosis_tile-art-batch-4_229: -278840251752716367
+      hyptosis_tile-art-batch-4_23: 8140465211070214813
+      hyptosis_tile-art-batch-4_230: 4220348137918859849
+      hyptosis_tile-art-batch-4_231: -2437719886836621616
+      hyptosis_tile-art-batch-4_232: 2074929792675544600
+      hyptosis_tile-art-batch-4_233: -1551155234137612125
+      hyptosis_tile-art-batch-4_234: -7304468603097968867
+      hyptosis_tile-art-batch-4_235: -6059504072426470583
+      hyptosis_tile-art-batch-4_236: -433036323887224723
+      hyptosis_tile-art-batch-4_237: 7218958392843673889
+      hyptosis_tile-art-batch-4_238: -545275243566434120
+      hyptosis_tile-art-batch-4_239: 3553727077303280881
+      hyptosis_tile-art-batch-4_24: 3542623498797310651
+      hyptosis_tile-art-batch-4_240: -156194673509018871
+      hyptosis_tile-art-batch-4_241: 8361589745695120848
+      hyptosis_tile-art-batch-4_242: -2659320647181964652
+      hyptosis_tile-art-batch-4_243: -4478078510889416280
+      hyptosis_tile-art-batch-4_244: -3423082587571959166
+      hyptosis_tile-art-batch-4_245: -6687337654452210398
+      hyptosis_tile-art-batch-4_246: -1500395669165490261
+      hyptosis_tile-art-batch-4_247: -1461317014572279602
+      hyptosis_tile-art-batch-4_248: -2105437037008515480
+      hyptosis_tile-art-batch-4_249: -1257604867468846819
+      hyptosis_tile-art-batch-4_25: 1548211529345467165
+      hyptosis_tile-art-batch-4_250: -6311133556096895418
+      hyptosis_tile-art-batch-4_251: 994522787780147860
+      hyptosis_tile-art-batch-4_252: 7183282986267420842
+      hyptosis_tile-art-batch-4_253: -8356272056656013221
+      hyptosis_tile-art-batch-4_254: 9063276807080584292
+      hyptosis_tile-art-batch-4_255: -4581366385675055422
+      hyptosis_tile-art-batch-4_256: -3128409280772942680
+      hyptosis_tile-art-batch-4_257: 1980577305666958933
+      hyptosis_tile-art-batch-4_258: 331235421883671848
+      hyptosis_tile-art-batch-4_259: -3906904365430432819
+      hyptosis_tile-art-batch-4_26: 8125089458717304277
+      hyptosis_tile-art-batch-4_260: 2077523631520442923
+      hyptosis_tile-art-batch-4_261: -2434517671983758012
+      hyptosis_tile-art-batch-4_262: 503663995260349570
+      hyptosis_tile-art-batch-4_263: 6564168646494353071
+      hyptosis_tile-art-batch-4_264: -6303400907968420215
+      hyptosis_tile-art-batch-4_265: -376082573829602888
+      hyptosis_tile-art-batch-4_266: 553944463720980652
+      hyptosis_tile-art-batch-4_267: 9201887215904392048
+      hyptosis_tile-art-batch-4_268: 1065749064922050137
+      hyptosis_tile-art-batch-4_269: -7114549001887211399
+      hyptosis_tile-art-batch-4_27: 2133729271601530953
+      hyptosis_tile-art-batch-4_270: -5196015630827389996
+      hyptosis_tile-art-batch-4_271: -8879245979376653141
+      hyptosis_tile-art-batch-4_272: 2769951467439579122
+      hyptosis_tile-art-batch-4_273: -4406018101098305953
+      hyptosis_tile-art-batch-4_274: 7592184315640614233
+      hyptosis_tile-art-batch-4_275: 568766767394566453
+      hyptosis_tile-art-batch-4_276: 4166294502340865838
+      hyptosis_tile-art-batch-4_277: 5019428117466203252
+      hyptosis_tile-art-batch-4_278: 2616847814789870326
+      hyptosis_tile-art-batch-4_279: -7867112465346280119
+      hyptosis_tile-art-batch-4_28: 6856417231576345443
+      hyptosis_tile-art-batch-4_280: -2503776002737594075
+      hyptosis_tile-art-batch-4_281: 2328032731963236259
+      hyptosis_tile-art-batch-4_282: 1824244487220060674
+      hyptosis_tile-art-batch-4_283: 3459325015749246251
+      hyptosis_tile-art-batch-4_284: -7775556742877912319
+      hyptosis_tile-art-batch-4_285: -4787433529428632494
+      hyptosis_tile-art-batch-4_286: 3538297259262781218
+      hyptosis_tile-art-batch-4_287: 3336304222573310844
+      hyptosis_tile-art-batch-4_288: 5076664346067513302
+      hyptosis_tile-art-batch-4_289: 6437844895453491466
+      hyptosis_tile-art-batch-4_29: -1436597356225894904
+      hyptosis_tile-art-batch-4_290: 4412921007939619530
+      hyptosis_tile-art-batch-4_291: -3986070723127490464
+      hyptosis_tile-art-batch-4_292: -1496588764626639908
+      hyptosis_tile-art-batch-4_293: 5988125062740869728
+      hyptosis_tile-art-batch-4_294: 4310548065657416020
+      hyptosis_tile-art-batch-4_295: -2687745920079182246
+      hyptosis_tile-art-batch-4_296: 2586340441863540096
+      hyptosis_tile-art-batch-4_297: 463886301578396898
+      hyptosis_tile-art-batch-4_298: 4823074077182053618
+      hyptosis_tile-art-batch-4_299: 7334448241473830806
+      hyptosis_tile-art-batch-4_3: -1064882856770822174
+      hyptosis_tile-art-batch-4_30: 408298187949852211
+      hyptosis_tile-art-batch-4_300: 5247880564141336708
+      hyptosis_tile-art-batch-4_301: -4315941873913354040
+      hyptosis_tile-art-batch-4_302: -120715282610802810
+      hyptosis_tile-art-batch-4_303: 3204615359633180633
+      hyptosis_tile-art-batch-4_304: 5223467952430409298
+      hyptosis_tile-art-batch-4_305: -640998989146096755
+      hyptosis_tile-art-batch-4_306: -4859645361194245499
+      hyptosis_tile-art-batch-4_307: -8269962009446570226
+      hyptosis_tile-art-batch-4_308: 8255695379013355946
+      hyptosis_tile-art-batch-4_309: -7672589366965195433
+      hyptosis_tile-art-batch-4_31: -5572553217683194398
+      hyptosis_tile-art-batch-4_310: -395921114397460888
+      hyptosis_tile-art-batch-4_311: 9001812131244363162
+      hyptosis_tile-art-batch-4_312: -8363714260072443442
+      hyptosis_tile-art-batch-4_313: -8627534324044071243
+      hyptosis_tile-art-batch-4_314: -825862494788441211
+      hyptosis_tile-art-batch-4_315: -7069582041145764653
+      hyptosis_tile-art-batch-4_316: -7866784342290485460
+      hyptosis_tile-art-batch-4_317: 194112438408430601
+      hyptosis_tile-art-batch-4_318: -5331653368585021444
+      hyptosis_tile-art-batch-4_319: -4092238924154619199
+      hyptosis_tile-art-batch-4_32: -1856149234263855287
+      hyptosis_tile-art-batch-4_320: 5966870776909524552
+      hyptosis_tile-art-batch-4_321: -3434469345738039593
+      hyptosis_tile-art-batch-4_322: 4562041918721076712
+      hyptosis_tile-art-batch-4_323: 8024401826487935542
+      hyptosis_tile-art-batch-4_324: -6902906186698196269
+      hyptosis_tile-art-batch-4_325: -7019805420941396059
+      hyptosis_tile-art-batch-4_326: -8235781714369042863
+      hyptosis_tile-art-batch-4_327: 4174950265605141641
+      hyptosis_tile-art-batch-4_328: 7048940739915692988
+      hyptosis_tile-art-batch-4_329: -9181232988637273604
+      hyptosis_tile-art-batch-4_33: -8896485350018748042
+      hyptosis_tile-art-batch-4_330: 1383912685699902811
+      hyptosis_tile-art-batch-4_331: -721715532833801622
+      hyptosis_tile-art-batch-4_332: 2165091007443550557
+      hyptosis_tile-art-batch-4_333: -743916079323322655
+      hyptosis_tile-art-batch-4_334: 1281411433093300842
+      hyptosis_tile-art-batch-4_335: -252771534228042268
+      hyptosis_tile-art-batch-4_336: 563423578613141233
+      hyptosis_tile-art-batch-4_337: 654935095932646262
+      hyptosis_tile-art-batch-4_338: -1652406338087091675
+      hyptosis_tile-art-batch-4_339: -2923792600373903979
+      hyptosis_tile-art-batch-4_34: -1797246107917405003
+      hyptosis_tile-art-batch-4_340: -1640477880882632062
+      hyptosis_tile-art-batch-4_341: -6472253559671324326
+      hyptosis_tile-art-batch-4_342: 1437605791518240999
+      hyptosis_tile-art-batch-4_343: 596618393625284112
+      hyptosis_tile-art-batch-4_344: -3224192013860163072
+      hyptosis_tile-art-batch-4_345: 2584354124842057032
+      hyptosis_tile-art-batch-4_346: 1205682634010822465
+      hyptosis_tile-art-batch-4_347: -7727258243797999690
+      hyptosis_tile-art-batch-4_348: -5979593129090615218
+      hyptosis_tile-art-batch-4_349: 8123362883341526297
+      hyptosis_tile-art-batch-4_35: -6398969260326572763
+      hyptosis_tile-art-batch-4_350: -197787012200700215
+      hyptosis_tile-art-batch-4_351: -6060067095284379102
+      hyptosis_tile-art-batch-4_352: -742536067505911522
+      hyptosis_tile-art-batch-4_353: 4062854588500137604
+      hyptosis_tile-art-batch-4_354: -1662748984103313670
+      hyptosis_tile-art-batch-4_355: -6779698305793314345
+      hyptosis_tile-art-batch-4_356: 8361242834421741166
+      hyptosis_tile-art-batch-4_357: -5905844895039083192
+      hyptosis_tile-art-batch-4_358: -1344646202922449835
+      hyptosis_tile-art-batch-4_359: -5616717108662862569
+      hyptosis_tile-art-batch-4_36: 9081478573839158293
+      hyptosis_tile-art-batch-4_360: 997996413525668825
+      hyptosis_tile-art-batch-4_361: 8845853399613465832
+      hyptosis_tile-art-batch-4_362: -7498452626038046396
+      hyptosis_tile-art-batch-4_363: 7146472536918602932
+      hyptosis_tile-art-batch-4_364: -5282290151652439111
+      hyptosis_tile-art-batch-4_365: -750104334619996215
+      hyptosis_tile-art-batch-4_366: 3320472193154887759
+      hyptosis_tile-art-batch-4_367: -4214412544194946435
+      hyptosis_tile-art-batch-4_368: -3517347304292094084
+      hyptosis_tile-art-batch-4_369: -2722427652321479750
+      hyptosis_tile-art-batch-4_37: -4213599604483865382
+      hyptosis_tile-art-batch-4_370: 8103479741573251670
+      hyptosis_tile-art-batch-4_371: -1897768403099572978
+      hyptosis_tile-art-batch-4_372: 4258428306782755758
+      hyptosis_tile-art-batch-4_373: -7598298292038602351
+      hyptosis_tile-art-batch-4_374: 7899995864401308328
+      hyptosis_tile-art-batch-4_375: 59623005822176260
+      hyptosis_tile-art-batch-4_376: 1655029887929492741
+      hyptosis_tile-art-batch-4_377: -3915604119075043327
+      hyptosis_tile-art-batch-4_378: 8073023637006551656
+      hyptosis_tile-art-batch-4_379: 3941363414963251107
+      hyptosis_tile-art-batch-4_38: 8068014769041077200
+      hyptosis_tile-art-batch-4_380: 2880193502488823878
+      hyptosis_tile-art-batch-4_381: 2265121682655382031
+      hyptosis_tile-art-batch-4_382: -6540146294861688914
+      hyptosis_tile-art-batch-4_383: -7486573679034296700
+      hyptosis_tile-art-batch-4_384: -4219088297703296043
+      hyptosis_tile-art-batch-4_385: 2004569487654336892
+      hyptosis_tile-art-batch-4_386: 7078904770912458709
+      hyptosis_tile-art-batch-4_387: -8096000203576048326
+      hyptosis_tile-art-batch-4_388: -2550657624576155847
+      hyptosis_tile-art-batch-4_389: 7670597708666877172
+      hyptosis_tile-art-batch-4_39: 2706695402875009199
+      hyptosis_tile-art-batch-4_390: -4654408815512414804
+      hyptosis_tile-art-batch-4_391: -3508819253998902537
+      hyptosis_tile-art-batch-4_392: 323878947097807477
+      hyptosis_tile-art-batch-4_393: 922929643739689263
+      hyptosis_tile-art-batch-4_394: -3919542344409786805
+      hyptosis_tile-art-batch-4_395: -8122125569642707022
+      hyptosis_tile-art-batch-4_396: 3915098669029051616
+      hyptosis_tile-art-batch-4_397: -3934827523676457313
+      hyptosis_tile-art-batch-4_398: -2830484366979255954
+      hyptosis_tile-art-batch-4_399: 4670962326856712582
+      hyptosis_tile-art-batch-4_4: 662532184203672033
+      hyptosis_tile-art-batch-4_40: 6257385493019550472
+      hyptosis_tile-art-batch-4_400: 2222607561391560777
+      hyptosis_tile-art-batch-4_401: 189189397665093177
+      hyptosis_tile-art-batch-4_402: -12016478497282979
+      hyptosis_tile-art-batch-4_403: 5855206398209370251
+      hyptosis_tile-art-batch-4_404: 9147656289416656181
+      hyptosis_tile-art-batch-4_405: -7106899801336670273
+      hyptosis_tile-art-batch-4_406: -7645829034147821808
+      hyptosis_tile-art-batch-4_407: 6492645974373899549
+      hyptosis_tile-art-batch-4_408: 8646844847784481781
+      hyptosis_tile-art-batch-4_409: 740760437953249693
+      hyptosis_tile-art-batch-4_41: 1208930247238057828
+      hyptosis_tile-art-batch-4_410: 5239395617874562876
+      hyptosis_tile-art-batch-4_411: -1222667108352179647
+      hyptosis_tile-art-batch-4_412: -1225139450929392576
+      hyptosis_tile-art-batch-4_42: 850086752508764652
+      hyptosis_tile-art-batch-4_43: -1495356064306340913
+      hyptosis_tile-art-batch-4_44: -3188930868048042498
+      hyptosis_tile-art-batch-4_45: -7047794974654079591
+      hyptosis_tile-art-batch-4_46: 9052815576317281706
+      hyptosis_tile-art-batch-4_47: -6528205537170477971
+      hyptosis_tile-art-batch-4_48: 1932553349836736809
+      hyptosis_tile-art-batch-4_49: -8776324026118614155
+      hyptosis_tile-art-batch-4_5: 240165217248994796
+      hyptosis_tile-art-batch-4_50: -1914065568655108407
+      hyptosis_tile-art-batch-4_51: -1267975840671455026
+      hyptosis_tile-art-batch-4_52: -8834901906670600691
+      hyptosis_tile-art-batch-4_53: 5524411747373525007
+      hyptosis_tile-art-batch-4_54: 4277482440641701833
+      hyptosis_tile-art-batch-4_55: -2708594409618200139
+      hyptosis_tile-art-batch-4_56: 8732744528173148723
+      hyptosis_tile-art-batch-4_57: 4451712784524916030
+      hyptosis_tile-art-batch-4_58: -6950934454932091392
+      hyptosis_tile-art-batch-4_59: 2964537749474280596
+      hyptosis_tile-art-batch-4_6: 7891299118310167625
+      hyptosis_tile-art-batch-4_60: 2344917302483044471
+      hyptosis_tile-art-batch-4_61: 8299919037373020076
+      hyptosis_tile-art-batch-4_62: -6843715638212388898
+      hyptosis_tile-art-batch-4_63: -5886978030135495719
+      hyptosis_tile-art-batch-4_64: 1931057838978464071
+      hyptosis_tile-art-batch-4_65: 8950898954986552731
+      hyptosis_tile-art-batch-4_66: -7477759848906247364
+      hyptosis_tile-art-batch-4_67: -2568458444973728685
+      hyptosis_tile-art-batch-4_68: 8498662988604367112
+      hyptosis_tile-art-batch-4_69: -2214524287520316038
+      hyptosis_tile-art-batch-4_7: 2965484049809974023
+      hyptosis_tile-art-batch-4_70: 6102752774858058922
+      hyptosis_tile-art-batch-4_71: -8954402920184758489
+      hyptosis_tile-art-batch-4_72: -1575131376124248314
+      hyptosis_tile-art-batch-4_73: -2059728477524559900
+      hyptosis_tile-art-batch-4_74: 8846980237903984154
+      hyptosis_tile-art-batch-4_75: 5676915499478636762
+      hyptosis_tile-art-batch-4_76: -9036734983950166760
+      hyptosis_tile-art-batch-4_77: -8407484784303439690
+      hyptosis_tile-art-batch-4_78: 232241261668768213
+      hyptosis_tile-art-batch-4_79: -3662503588320689277
+      hyptosis_tile-art-batch-4_8: 1359561940110308916
+      hyptosis_tile-art-batch-4_80: -1193667979923905680
+      hyptosis_tile-art-batch-4_81: 4182717368789487006
+      hyptosis_tile-art-batch-4_82: -4343848716911887062
+      hyptosis_tile-art-batch-4_83: -2844581846841346379
+      hyptosis_tile-art-batch-4_84: -6822085318328559695
+      hyptosis_tile-art-batch-4_85: 7910974992787741739
+      hyptosis_tile-art-batch-4_86: -1883055803356860944
+      hyptosis_tile-art-batch-4_87: 1765035226567572288
+      hyptosis_tile-art-batch-4_88: -5841008210432958508
+      hyptosis_tile-art-batch-4_89: -8854399073840974131
+      hyptosis_tile-art-batch-4_9: 8364198614267616986
+      hyptosis_tile-art-batch-4_90: -8225836229549817185
+      hyptosis_tile-art-batch-4_91: -8150349013488672702
+      hyptosis_tile-art-batch-4_92: 2937058572228970445
+      hyptosis_tile-art-batch-4_93: 3883140024222722412
+      hyptosis_tile-art-batch-4_94: 5168232448898146441
+      hyptosis_tile-art-batch-4_95: 3884469463730927868
+      hyptosis_tile-art-batch-4_96: 2892034495611406128
+      hyptosis_tile-art-batch-4_97: -8650978571669041091
+      hyptosis_tile-art-batch-4_98: -4786453408312901357
+      hyptosis_tile-art-batch-4_99: -110508443237487363
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

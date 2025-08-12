@@ -10,19 +10,21 @@ public class Siren : MonoBehaviour
 
     private void OnEnable()
     {
-        _door.DoorOpen += OnDoorOpen;
-    }
-    private void OnDisable()
-    {
-        _door.DoorOpen -= OnDoorOpen;
+        _door.StateChanged += OnDoorStateChange;
     }
 
-    private void OnDoorOpen(bool doorOpen)
+    private void OnDisable()
+    {
+        _door.StateChanged -= OnDoorStateChange;
+    }
+
+    private void OnDoorStateChange(bool doorOpen)
     {
         if (doorOpen)
         {
             _audioSource.volume = _currentVolume;
             _reduction = false;
+
             if (!_audioSource.isPlaying)
                 _audioSource.Play();
         }
@@ -36,11 +38,11 @@ public class Siren : MonoBehaviour
     {
         if (_audioSource.isPlaying)
         {
-            if (!_reduction)
+            if (_reduction == false)
             {
                 if (_currentVolume < 1.0f)
                 {
-                    _currentVolume += Mathf.Lerp(0, 1, Time.deltaTime / _increaseVolumeInSeconds);
+                    _currentVolume += Mathf.MoveTowards(0, 1, Time.deltaTime / _increaseVolumeInSeconds);
                     _audioSource.volume = _currentVolume;
                 }
             }
@@ -48,7 +50,7 @@ public class Siren : MonoBehaviour
             {
                 if (_currentVolume > 0.0f)
                 {
-                    _currentVolume -= Mathf.Lerp(0, 1, Time.deltaTime / _increaseVolumeInSeconds);
+                    _currentVolume -= Mathf.MoveTowards(0, 1, Time.deltaTime / _increaseVolumeInSeconds);
                     _audioSource.volume = _currentVolume;
                 }
                 else

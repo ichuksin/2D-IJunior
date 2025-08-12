@@ -9,14 +9,14 @@ public class Door : MonoBehaviour
     private Animator _animator; 
     private bool _isOpen = false;
 
-    public event UnityAction<bool> DoorOpen;
+    public event UnityAction<bool> StateChanged;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
-    public void OnTriggerEnter2D(Collider2D collider)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.GetComponent<Player>())
         {
@@ -24,18 +24,19 @@ public class Door : MonoBehaviour
             {
                 _isOpen = true;
                 _animator.SetTrigger("isOpen");
-                DoorOpen?.Invoke(true);
+                StateChanged?.Invoke(true);
             }
         }
     }
-    public void OnTriggerExit2D(Collider2D collider)
+
+    private void OnTriggerExit2D(Collider2D collider)
     {
         if (collider.GetComponent<Player>())
         {
             Vector2 contactPoint = collider.ClosestPoint(new Vector2(0, 0));
             if (contactPoint.x < _directionOutward)
             {
-                DoorOpen?.Invoke(false);
+                StateChanged?.Invoke(false);
                 _isOpen = false;
                 _animator.ResetTrigger("isOpen");
             }

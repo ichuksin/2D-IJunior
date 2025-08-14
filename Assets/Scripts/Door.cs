@@ -4,12 +4,18 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Animator))]
 public class Door : MonoBehaviour
 {
+    public const string IsOpen = nameof(IsOpen);
+
     [SerializeField] private float _directionOutward;
+
+    public readonly int IsOpenIndex = Animator.StringToHash(IsOpen);
+
 
     private Animator _animator; 
     private bool _isOpen = false;
 
-    public event UnityAction<bool> StateChanged;
+    public event UnityAction DoorOpen;
+    public event UnityAction DoorClose;
 
     private void Awake()
     {
@@ -18,27 +24,28 @@ public class Door : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.GetComponent<Player>())
+        if (collider.TryGetComponent<Player>(out _))
         {
             if (!_isOpen)
             {
                 _isOpen = true;
-                _animator.SetTrigger("isOpen");
-                StateChanged?.Invoke(true);
+                _animator.SetTrigger(IsOpenIndex);
+                DoorOpen?.Invoke();
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collider)
     {
-        if (collider.GetComponent<Player>())
+        if (collider.TryGetComponent<Player>(out _))
         {
-            Vector2 contactPoint = collider.ClosestPoint(new Vector2(0, 0));
+            Vector2 contactPoint = collider.ClosestPoint(Vector2.zero);
+            
             if (contactPoint.x < _directionOutward)
             {
-                StateChanged?.Invoke(false);
+                DoorClose?.Invoke();
                 _isOpen = false;
-                _animator.ResetTrigger("isOpen");
+                _animator.ResetTrigger(IsOpen);
             }
         }
     }

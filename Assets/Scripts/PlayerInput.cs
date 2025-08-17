@@ -5,9 +5,10 @@ public class PlayerInput : MonoBehaviour
 {
     public const string Horizontal = nameof(Horizontal);
 
+    private float _previousDirection;
+    
     public event Action<float> MoveHorizontal;
     public event Action Stop;
-    private float _previousDirection;
 
     private void Update()
     {
@@ -20,7 +21,7 @@ public class PlayerInput : MonoBehaviour
         }
         else if (_previousDirection != 0.0f)
         {
-            Stop.Invoke();
+            Stop?.Invoke();
         } 
     }
 }

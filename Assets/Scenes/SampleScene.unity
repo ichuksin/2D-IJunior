@@ -302,6 +302,7 @@ MonoBehaviour:
   _playerInput: {fileID: 256704696}
   _animator: {fileID: 256704695}
   _spriteRenderer: {fileID: 256704691}
+  _flipAngle: 180
 --- !u!114 &256704694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -469,7 +470,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioSource: {fileID: 1470262024}
   _volumeChangeInSeconds: 5
-  _volumeChangeStep: 50
   _minVolume: 0
   _maxVolume: 1
 --- !u!1 &1013647592
@@ -1914,7 +1914,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 543e4ae179c5d3346943afc14b125e48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _directionOutward: 0.6
+  _directionOutward: 0.5
+  _animator: {fileID: 1470262020}
 --- !u!82 &1470262024
 AudioSource:
   m_ObjectHideFlags: 0

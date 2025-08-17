@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 256704693}
   - component: {fileID: 256704695}
   - component: {fileID: 256704696}
+  - component: {fileID: 256704697}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -298,10 +299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99ab59983def9624f8481c8b1a9d936e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animatorController: {fileID: 256704697}
   _speed: 3
   _playerInput: {fileID: 256704696}
-  _animator: {fileID: 256704695}
-  _spriteRenderer: {fileID: 256704691}
   _flipAngle: 180
 --- !u!114 &256704694
 MonoBehaviour:
@@ -348,6 +348,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03ed06acc771ee04484454161a7383a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &256704697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256704687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0874540b3b0df3469d7503657ac1168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInput: {fileID: 256704696}
+  _animator: {fileID: 256704695}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1759,7 @@ GameObject:
   - component: {fileID: 1470262021}
   - component: {fileID: 1470262022}
   - component: {fileID: 1470262024}
+  - component: {fileID: 1470262025}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -1915,7 +1930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionOutward: 0.5
-  _animator: {fileID: 1470262020}
+  _animatorController: {fileID: 1470262025}
 --- !u!82 &1470262024
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2012,6 +2027,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1470262025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470262016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7229bbaa554094f41811e3a49653e5ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _animator: {fileID: 1470262020}
 --- !u!1 &1820696084
 GameObject:
   m_ObjectHideFlags: 0

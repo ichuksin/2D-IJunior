@@ -4,11 +4,8 @@ using UnityEngine.Events;
 [RequireComponent(typeof(Animator))]
 public class Door : MonoBehaviour
 {
-    public const string IsOpen = nameof(IsOpen);
-    public readonly int IsOpenIndex = Animator.StringToHash(IsOpen);
-
     [SerializeField] private float _directionOutward;
-    [SerializeField] private Animator _animator; 
+    [SerializeField] private DoorAnimatorController _animatorController;
 
     private bool _isOpen = false;
 
@@ -22,7 +19,7 @@ public class Door : MonoBehaviour
             if (!_isOpen)
             {
                 _isOpen = true;
-                _animator.SetTrigger(IsOpenIndex);
+                _animatorController.DoorOpen();
                 DoorOpen?.Invoke();
             }
         }
@@ -38,7 +35,7 @@ public class Door : MonoBehaviour
             {
                 DoorClose?.Invoke();
                 _isOpen = false;
-                _animator.ResetTrigger(IsOpen);
+                _animatorController.DoorClose();
             }
         }
     }

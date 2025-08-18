@@ -1,16 +1,16 @@
-﻿using UnityEngine;
-using UnityEngine.Events;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Animator))]
 public class Door : MonoBehaviour
 {
     [SerializeField] private float _directionOutward;
-    [SerializeField] private DoorAnimatorController _animatorController;
+    [SerializeField] private DoorAnimator _animatorController;
 
     private bool _isOpen = false;
 
-    public event UnityAction DoorOpen;
-    public event UnityAction DoorClose;
+    public event Action DoorOpen;
+    public event Action DoorClose;
 
     private void OnTriggerEnter2D(Collider2D collider)
     {

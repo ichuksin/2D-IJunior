@@ -1,11 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimatorController : MonoBehaviour
+public class PlayerAnimator : MonoBehaviour
 {
-    public const string Speed = nameof(Speed);
-    public readonly int SpeedIndex = Animator.StringToHash(Speed);
+    public readonly int Speed = Animator.StringToHash(nameof(Speed));
 
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private Animator _animator;
@@ -26,11 +23,11 @@ public class PlayerAnimatorController : MonoBehaviour
 
     public void Run()
     {
-        _animator.SetFloat(SpeedIndex, _maxSpeed);
+        _animator.SetFloat(Speed, _maxSpeed);
     }
 
     private void Stop()
     {
-        _animator.SetFloat(SpeedIndex, _minSpeed);
+        _animator.SetFloat(Speed, _minSpeed);
     }
 }

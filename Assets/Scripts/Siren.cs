@@ -1,6 +1,6 @@
 ﻿using System.Collections;
-
 using UnityEngine;
+
 public class Siren : MonoBehaviour
 {
     [SerializeField] private AudioSource _audioSource;
@@ -10,7 +10,6 @@ public class Siren : MonoBehaviour
 
     private Coroutine _coroutine;
     private float _currentVolume = 0;
-    private float _targetVolume = 0;
 
     public void Enable()
     {
@@ -20,8 +19,7 @@ public class Siren : MonoBehaviour
         if (_audioSource.isPlaying == false)
             _audioSource.Play();
 
-        _targetVolume = _maxVolume;
-        _coroutine = StartCoroutine(nameof(ChangeVolume) );
+        _coroutine = StartCoroutine(ChangeVolume(_maxVolume) );
     }
 
     public void Disable()
@@ -29,25 +27,19 @@ public class Siren : MonoBehaviour
         if (_coroutine != null)
             StopCoroutine(_coroutine);
 
-        _targetVolume = _minVolume;
-        _coroutine = StartCoroutine(nameof(ChangeVolume) );
+        _coroutine = StartCoroutine(ChangeVolume(_minVolume) );
     }
 
-    private IEnumerator ChangeVolume()
+    private IEnumerator ChangeVolume(float targetVolume)
     {
-        while (_currentVolume != _targetVolume)
+        while (_currentVolume != targetVolume)
         {
-            _currentVolume = Mathf.MoveTowards(_currentVolume, _targetVolume, Time.deltaTime / _volumeChangeInSeconds);
-            SetVolume();
+            _currentVolume = Mathf.MoveTowards(_currentVolume, targetVolume, Time.deltaTime / _volumeChangeInSeconds);
+            _audioSource.volume = _currentVolume;
             yield return null;
         }
 
-        if (_targetVolume == 0.0f)
+        if (targetVolume == _minVolume)
             _audioSource.Stop();
-    }
-
-    private void SetVolume()
-    {
-        _audioSource.volume = _currentVolume;
     }
 }

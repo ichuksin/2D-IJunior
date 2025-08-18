@@ -4,7 +4,7 @@
 [RequireComponent(typeof(SpriteRenderer))]
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private PlayerAnimatorController _animatorController;
+    [SerializeField] private PlayerAnimator _animatorController;
     [SerializeField] private float _speed;
     [SerializeField] private PlayerInput _playerInput;
     [SerializeField] private float _flipAngle = 180;
